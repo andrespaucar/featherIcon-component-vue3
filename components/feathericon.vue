@@ -18,7 +18,9 @@ export default {
         onMounted(()=>{
             svgToHtml.value = feather.icons[props.name].toSvg()
         })
-        onBeforeMount(()=>{})
+        onUpdated(()=>{
+            svgToHtml.value = feather.icons[props.name].toSvg()
+        })
         return{
             svgToHtml
         }
