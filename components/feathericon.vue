@@ -7,6 +7,8 @@
 
 <script>
 import { onBeforeMount, onMounted, ref } from 'vue'
+import feather from "feather-icons";
+
 export default {
     props:{
         name:{required:true},
